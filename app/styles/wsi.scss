@@ -22,6 +22,15 @@ $body-height: 700px;
     border: 0;
     background: transparent;
 
+    .wsi-link {
+        font-size: 88%;
+        text-decoration: underline;
+    }
+
+    .wsi-smaller {
+        font-size: 88%;
+    }
+
     h2 {
         margin: 0;
         color: $wsi-brown;
@@ -47,27 +56,32 @@ $tab-height: 3.0rem;
         }
     }
 
-    .navbar-collapse ul li {
-        border-radius : 12px 12px 0 0;
-        background-color: $wsi-lighter-brown;
-        margin: 0 .5rem 0 .5rem;
-        padding: 0 1.5rem 0 1.5rem;
-        height: $tab-height;
-        line-height: $tab-height;
-        min-height: $tab-height;
+    .navbar-collapse {
+        ul {
+            
+            li {
+                border-radius : 12px 12px 0 0;
+                background-color: $wsi-lighter-brown;
+                margin: 0 .5rem 0 .5rem;
+                padding: 0 1.5rem 0 1.5rem;
+                height: $tab-height;
+                line-height: $tab-height;
+                min-height: $tab-height;
 
-        a {
-            color: $wsi-off-white;
-            font-size: 120%;
-            height: $tab-height;
-            line-height: 0.4rem;
-            min-height: $tab-height;
+                a {
+                    color: $wsi-off-white;
+                    font-size: 120%;
+                    height: $tab-height;
+                    line-height: 0.4rem;
+                    min-height: $tab-height;
+                }
+
+                &.tab-active {
+                    background-color: $wsi-brown;
+                }
+
+            }
         }
-
-        &.tab-active {
-            background-color: $wsi-brown;
-        }
-
     }
 }
 
@@ -103,11 +117,14 @@ $tab-height: 3.0rem;
         color: $wsi-off-white;
         display: block;
         font-size: 110%;
-        height: 4.0rem;
-        margin-top: 1rem;
-        margin-right: .6rem;
-        padding: 1rem 0 0 1.2rem;
+        height: 3.0rem;
+        margin: 1.2rem 0.9rem 0.5rem 0;
+        padding: 0.5rem 0 0 1.2rem;
         text-align: left;
+
+        &.wsi-pages {
+            margin-top: 2.5rem;
+        }
     }
 
     ul {
@@ -121,11 +138,17 @@ $tab-height: 3.0rem;
             a {
                 color: $wsi-lighter-brown;
                 font-size: 80%;
-                height: 1rem;
-                line-height: 1.5rem;
+                height: 1.3rem;
+                line-height: 1.3rem;
                 margin: .2rem .4rem .2rem .8rem;
-                padding: .2rem;
-                vertical-align: center;
+                padding: 0.2rem 0 0.2rem 0.2rem;
+
+                &:hover {
+                    background-color:transparent;
+                    border: 0;
+                    color: $wsi-brown;
+                    font-size: 90%;
+                }
             }
         }
     }
@@ -136,9 +159,19 @@ $tab-height: 3.0rem;
     padding: 2rem;
     border-left: 4px solid $wsi-brown;
 
+    .wsi-lead {
+        margin-bottom: 3rem;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    p {
+        line-height: 1.45rem;
+    }
+
     .wsi-picture-carousel {
 
-        margin: .4rem 0 2.4rem 0;
+        margin: .4rem 0 4.0rem 0;
 
         .empty-picture-block {
             background-color: $wsi-brown;
@@ -164,6 +197,12 @@ $tab-height: 3.0rem;
 
 
 .wsi-footer {
-    margin: 0;
+    margin: 0.2rem 0 0 0 ;
     padding: 0;
+    font-size: 88%;
+    line-height: 1.4rem;
+
+    a {
+        color: $wsi-brown;
+    }
 }
