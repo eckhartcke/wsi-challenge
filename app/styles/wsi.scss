@@ -1,0 +1,169 @@
+
+$wsi-white: white;
+$wsi-off-white: darken(white, 10%);
+$wsi-brown: #4f4f4f;
+$wsi-lighter-brown: lighten($wsi-brown, 20%);
+$body-height: 700px;
+
+.image-placeholder {
+    background-image: url("../images/image-placeholder.png");
+}
+
+.wsi-body {
+    background-size: initial;
+    background-repeat: repeat;
+    background-position: top;
+    background-image: url("../images/background-swatch.png");
+}
+
+.wsi-header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+
+    h2 {
+        margin: 0;
+        color: $wsi-brown;
+    }
+}
+
+$tab-height: 3.0rem;
+
+.wsi-main-navbar {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: $tab-height;
+    line-height: $tab-height;
+    min-height: $tab-height;
+    background: transparent;
+
+    >.container {
+        padding: 0;
+
+        div {
+            width:100%;
+        }
+    }
+
+    .navbar-collapse ul li {
+        border-radius : 12px 12px 0 0;
+        background-color: $wsi-lighter-brown;
+        margin: 0 .5rem 0 .5rem;
+        padding: 0 1.5rem 0 1.5rem;
+        height: $tab-height;
+        line-height: $tab-height;
+        min-height: $tab-height;
+
+        a {
+            color: $wsi-off-white;
+            font-size: 120%;
+            height: $tab-height;
+            line-height: 0.4rem;
+            min-height: $tab-height;
+        }
+
+        &.tab-active {
+            background-color: $wsi-brown;
+        }
+
+    }
+}
+
+.wsi-main {
+    color: $wsi-brown;
+    margin: 0;
+    padding: 0;
+    border-bottom: 6px solid $wsi-brown;
+}
+
+.wsi-challenge-banner {
+    background: $wsi-brown;
+    border: 0;
+    color: $wsi-white;
+    display: block;
+    font-size: 180%;
+    height: 12rem;
+    line-height: 12rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: top;
+
+}
+
+.wsi-menu {
+    margin: 0;
+    padding: .3rem 0 0 0;
+    border: 0;
+
+    .wsi-subheader {
+        background: $wsi-brown;
+        color: $wsi-off-white;
+        display: block;
+        font-size: 110%;
+        height: 4.0rem;
+        margin-top: 1rem;
+        margin-right: .6rem;
+        padding: 1rem 0 0 1.2rem;
+        text-align: left;
+    }
+
+    ul {
+        border: 0;
+
+        li {
+            border: 0;
+            margin: 0;
+            padding: 0;
+
+            a {
+                color: $wsi-lighter-brown;
+                font-size: 80%;
+                height: 1rem;
+                line-height: 1.5rem;
+                margin: .2rem .4rem .2rem .8rem;
+                padding: .2rem;
+                vertical-align: center;
+            }
+        }
+    }
+}
+
+.wsi-main-content {
+    margin: 0;
+    padding: 2rem;
+    border-left: 4px solid $wsi-brown;
+
+    .wsi-picture-carousel {
+
+        margin: .4rem 0 2.4rem 0;
+
+        .empty-picture-block {
+            background-color: $wsi-brown;
+            color: $wsi-off-white;
+            width: 140px;
+            height: 123px;
+        }
+
+    }
+
+    .wsi-ad-copy {
+        font-size: 90%;
+
+        .call-out {
+            border: 1px solid $wsi-brown;
+            margin: 2px;
+            padding : 1.5rem;
+        }
+    }
+
+}
+
+
+
+.wsi-footer {
+    margin: 0;
+    padding: 0;
+}
