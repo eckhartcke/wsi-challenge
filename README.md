@@ -20,5 +20,5 @@ When, viewed at the sample's resolution of 940x700, this solution should match t
 
 At other sizes, the layout should adapt and be useful. Note that at extreme sizes (extremely large or extremely small), the output is less than perfect.
 
-The solution has some small bugs; I hope that the review finds it acceptable.
+
 
